@@ -38,6 +38,7 @@ class TestRequests(object):
         print(res.json())
 
 
+
     '''
     # 文件上传
     def test_file_uoload(self):
