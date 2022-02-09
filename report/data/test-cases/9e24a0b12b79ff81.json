@@ -1,0 +1,96 @@
+{
+  "uid" : "9e24a0b12b79ff81",
+  "name" : "test_02_yzq",
+  "fullName" : "testcase.test_login1.TestLogin#test_02_yzq",
+  "historyId" : "761a744448a7d36ef62aaeaf66f14882",
+  "time" : {
+    "start" : 1644403367371,
+    "stop" : 1644403367371,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "YZQ.local"
+  }, {
+    "name" : "thread",
+    "value" : "86351-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1f7d6424d1a0587c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644387989849,
+        "stop" : 1644387989849,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c1041ec853721bce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644387979288,
+        "stop" : 1644387979288,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "223788d43305e02b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644387892316,
+        "stop" : 1644387892316,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7148597332b6ff0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644387876965,
+        "stop" : 1644387876965,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "29f2b743168c2883",
+      "status" : "passed",
+      "time" : {
+        "start" : 1644387782240,
+        "stop" : 1644387782240,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e24a0b12b79ff81.json",
+  "parameterValues" : [ ]
+}
