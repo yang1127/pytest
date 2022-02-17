@@ -1,4 +1,5 @@
 import requests
+import pytest
 
 from common.yaml_util import YamlUtil
 
@@ -7,21 +8,39 @@ class TestRequests(object):
 
     # access_token = ""
 
-    # get请求：获取接口统一鉴权码taken接口
-    def test_get_token(self):
+    # get请求：获取接口统一鉴权码token接口
+    @pytest.mark.parametrize('caseinfo', YamlUtil().read_get_token_yaml('get_token.yml'))
+    def test_get_token(self, caseinfo):
+        print(caseinfo['name'])
+        print(caseinfo['validata'])
+        '''
+        print(caseinfo['request']['method'])
+        print(caseinfo['request']['url'])
+        print(caseinfo['request']['data'])
+        '''
+
+        '''
         url = "https://api.weixin.qq.com/cgi-bin/token"
         data = {
             "grant_type": "client_credential",
             "appid": "wx74a8627810cfa308",
             "secret": "e40a02f9d79a8097df497e6aaf93ab80"
         }
+        '''
+        method = caseinfo['request']['method']
+        url = caseinfo['request']['url']
+        data = caseinfo['request']['data']
+
         # res = requests.get(url=url, params=data)
-        res = requests.request(method="get", url=url, params=data)
+        # res = requests.request(method='get' url=url, params=data)
+        res = requests.request(method, url=url, params=data)
         print(res.json())
 
         # TestRequests.access_token = res.json()['access_token']
-        YamlUtil().write_extract_yaml({'access_token': res.json()['access_token']})
+        # YamlUtil().write_extract_yaml({'access_token': res.json()['access_token']})
 
+
+    '''
     # post请求：编辑便签
     def test_edit_flag(self):
         url = "https://api.weixin.qq.com/cgi-bin/tags/update?access_token="
@@ -36,7 +55,7 @@ class TestRequests(object):
         # res = requests.post(url=url, json=data)  # 为嵌套字典时，用json
         res = requests.request(method="post", url=url, json=data)
         print(res.json())
-
+    '''
 
     '''
     # 文件上传
