@@ -1,0 +1,2 @@
+2022-02-17 19:30:31.034 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 参数化搜索, TestCase ID: acf0fbe8-e37a-47a9-b1d8-b84e5c40aedd
+2022-02-17 19:30:31.035 | INFO     | httprunner.runner:__run_step:292 - run step begin: 搜索接口 >>>>>>

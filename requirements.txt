@@ -4,3 +4,7 @@ pytest-xdist
 pytest-ordering
 pytest-rerunfailures
 allure-pytest
+pip install openpyxl #读取xlsx格式excel文件
+pip install xlrd #读取xls 格式excel文件
+pip install uniout #可以显示中文
+pip install numpy #数据保存

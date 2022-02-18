@@ -1,0 +1,57 @@
+2022-02-17 17:10:22.366 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: testcase description, TestCase ID: 335c083e-46e9-4707-ae4a-bdfdff644d42
+2022-02-17 17:10:22.367 | INFO     | httprunner.runner:__run_step:292 - run step begin: /third/wallet/accounts/v1 >>>>>>
+2022-02-17 17:10:22.545 | DEBUG    | httprunner.client:request:186 - client IP: 10.18.36.176, Port: 54465
+2022-02-17 17:10:22.545 | DEBUG    | httprunner.client:request:194 - server IP: 58.87.82.241, Port: 443
+2022-02-17 17:10:22.546 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://app.yinxiang.com/third/wallet/accounts/v1
+headers  : {
+    "User-Agent": "YXBJ Android New/master_286.2024059 (zh_CN); Android/11; M2102J2SC/30; EDAMVersion=V2;",
+    "Accept-Encoding": "gzip",
+    "Accept": "*/*",
+    "Connection": "Keep-Alive",
+    "auth-token": "S=s31:U=1881e6e:E=1c77b6ef278:C=17e0e833960:P=1dd:A=yx-android-xauth-new:V=2:H=6e90184c3542e4eeae4db4487dd9ac09",
+    "Host": "app.yinxiang.com",
+    "HRUN-Request-ID": "HRUN-335c083e-46e9-4707-ae4a-bdfdff644d42-022367"
+}
+cookies  : {}
+body     : None
+
+2022-02-17 17:10:22.546 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "content-type": "application/json",
+    "grpc-encoding": "identity",
+    "grpc-accept-encoding": "gzip",
+    "x-envoy-upstream-service-time": "106",
+    "grpc-status": "0",
+    "content-length": "255",
+    "date": "Thu, 17 Feb 2022 09:10:22 GMT",
+    "server": "envoy",
+    "X-App-Server": "app-lb-4.prod1.bj.yxops.net/msvc-wallet-accounts/msvc-wallet-accounts"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "code": "SUCCESS",
+    "message": "",
+    "account": {
+        "bindWechat": true,
+        "bindTradePasscode": false,
+        "bindCellPhone": true,
+        "enable2Step": false,
+        "wechatNickName": "阿琪",
+        "cellPhone": "187*****462",
+        "lastTradePasscodeUpdatedTime": ""
+    }
+}
+
+2022-02-17 17:10:22.547 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 177.56 ms, response_length: 255 bytes
+2022-02-17 17:10:22.547 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2022-02-17 17:10:22.547 | INFO     | httprunner.response:validate:249 - assert body.code equal SUCCESS(str)	==> pass
+2022-02-17 17:10:22.548 | INFO     | httprunner.response:validate:249 - assert body.message equal (str)	==> pass
+2022-02-17 17:10:22.548 | INFO     | httprunner.runner:__run_step:304 - run step end: /third/wallet/accounts/v1 <<<<<<
+
